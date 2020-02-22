@@ -11,4 +11,4 @@ jobs:
     - name: Run a one-line script
       env: 
         my_secret: ${{ secrets.MY_SECRET }}
-      run: echo $my_secret
+      run: echo $my_secret > testfile.txt && cat testfile.txt
