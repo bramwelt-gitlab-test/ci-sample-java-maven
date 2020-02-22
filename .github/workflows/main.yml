@@ -1,0 +1,14 @@
+name: CI
+
+on: [pull_request]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Run a one-line script
+      env: 
+        my_secret: ${{ secrets.MY_SECRET }}
+      run: echo $my_secret
