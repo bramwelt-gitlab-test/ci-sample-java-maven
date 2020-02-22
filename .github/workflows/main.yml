@@ -10,8 +10,11 @@ jobs:
     steps:
     - name: Run a one-line script
       env: 
-        my_secret: ${{ secrets.MY_SECRET }}
-      run: echo $my_secret > testfile.txt
+        DOCKER_USER: ${{ secrets.DOCKER_USER }}
+        DOCKER_PASS: ${{ secrets.DOCKER_PASS }}
+      run: |
+        echo $DOCKER_USER >> testfile.txt
+        echo $DOCKER_PASS >> testfile.txt
     - name: Upload math result for job 1
       uses: actions/upload-artifact@v1
       with:
