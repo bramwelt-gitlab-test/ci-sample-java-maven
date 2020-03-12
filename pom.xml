@@ -5,7 +5,7 @@
   <artifactId>ci-sample-java-maven</artifactId>
   <packaging>jar</packaging>
   <version>1.0</version>
-  <name>ci-sample-java-maven</name>
+  <name>ci-sample-java-maven-2</name>
   <url>http://maven.apache.org</url>
   <dependencies>
     <dependency>
